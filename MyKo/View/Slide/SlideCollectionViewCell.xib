@@ -50,9 +50,6 @@
                                     <action selector="authBtnClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="QL7-jn-MVx"/>
                                 </connections>
                             </button>
-                            <pageControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="tJv-6J-E2B">
-                                <rect key="frame" x="129" y="754" width="116" height="26"/>
-                            </pageControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzq-YJ-CCs">
                                 <rect key="frame" x="22" y="458" width="330" height="101.5"/>
                                 <string key="text">17:08:57.795522+0300 MyKo[96528:8890854] [boringssl] boringssl_metrics_log_metric_block_invoke(153) Failed to log metrics
@@ -74,7 +71,6 @@
                             <constraint firstItem="VUX-jk-Cgm" firstAttribute="leading" secondItem="Ylm-ij-0Bh" secondAttribute="leading" constant="30" id="cEX-QD-JQe"/>
                             <constraint firstAttribute="bottom" secondItem="43x-jh-2KC" secondAttribute="bottom" constant="49" id="dE5-hy-N1L"/>
                             <constraint firstItem="43x-jh-2KC" firstAttribute="centerX" secondItem="Ylm-ij-0Bh" secondAttribute="centerX" id="iOg-AT-Hiv"/>
-                            <constraint firstAttribute="bottom" secondItem="tJv-6J-E2B" secondAttribute="bottom" constant="20" id="irS-47-GKI"/>
                             <constraint firstAttribute="trailing" secondItem="KEE-Qx-iBt" secondAttribute="trailing" constant="20" id="nEU-QL-u5K"/>
                             <constraint firstAttribute="trailing" secondItem="rzq-YJ-CCs" secondAttribute="trailing" constant="22" id="nlB-IJ-hhd"/>
                         </constraints>
