@@ -13,9 +13,12 @@
 		236A221327E2654500FC6691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236A221127E2654500FC6691 /* Main.storyboard */; };
 		236A221527E2654700FC6691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236A221427E2654700FC6691 /* Assets.xcassets */; };
 		236A221827E2654700FC6691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236A221627E2654700FC6691 /* LaunchScreen.storyboard */; };
+		236A222027E2657900FC6691 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 236A221F27E2657900FC6691 /* GoogleService-Info.plist */; };
+		C22D31706A3CF8BDF353FEE9 /* Pods_MyKo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1351FBC5E065A0C87F6C8F5A /* Pods_MyKo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1351FBC5E065A0C87F6C8F5A /* Pods_MyKo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyKo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		236A220827E2654500FC6691 /* MyKo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyKo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		236A220B27E2654500FC6691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		236A220D27E2654500FC6691 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		236A221427E2654700FC6691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		236A221727E2654700FC6691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		236A221927E2654700FC6691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		236A221F27E2657900FC6691 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		47737EDEDA0A5A92CA5D3347 /* Pods-MyKo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyKo.release.xcconfig"; path = "Target Support Files/Pods-MyKo/Pods-MyKo.release.xcconfig"; sourceTree = "<group>"; };
+		923770F43672678EA2977746 /* Pods-MyKo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyKo.debug.xcconfig"; path = "Target Support Files/Pods-MyKo/Pods-MyKo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C22D31706A3CF8BDF353FEE9 /* Pods_MyKo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				236A220A27E2654500FC6691 /* MyKo */,
 				236A220927E2654500FC6691 /* Products */,
+				8227B09E62E4AC8563BC7F0F /* Pods */,
+				25245456D1FB3DE4C78623B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +65,9 @@
 		236A220A27E2654500FC6691 /* MyKo */ = {
 			isa = PBXGroup;
 			children = (
+				23ED11B027E2691500D1481E /* Controller */,
+				23ED11AF27E2690700D1481E /* View */,
+				23ED11AE27E268F800D1481E /* Model */,
 				236A220B27E2654500FC6691 /* AppDelegate.swift */,
 				236A220D27E2654500FC6691 /* SceneDelegate.swift */,
 				236A220F27E2654500FC6691 /* ViewController.swift */,
@@ -63,8 +75,47 @@
 				236A221427E2654700FC6691 /* Assets.xcassets */,
 				236A221627E2654700FC6691 /* LaunchScreen.storyboard */,
 				236A221927E2654700FC6691 /* Info.plist */,
+				236A221F27E2657900FC6691 /* GoogleService-Info.plist */,
 			);
 			path = MyKo;
+			sourceTree = "<group>";
+		};
+		23ED11AE27E268F800D1481E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23ED11AF27E2690700D1481E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		23ED11B027E2691500D1481E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		25245456D1FB3DE4C78623B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1351FBC5E065A0C87F6C8F5A /* Pods_MyKo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8227B09E62E4AC8563BC7F0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				923770F43672678EA2977746 /* Pods-MyKo.debug.xcconfig */,
+				47737EDEDA0A5A92CA5D3347 /* Pods-MyKo.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 236A221C27E2654700FC6691 /* Build configuration list for PBXNativeTarget "MyKo" */;
 			buildPhases = (
+				506F984362903560F63DBA76 /* [CP] Check Pods Manifest.lock */,
 				236A220427E2654500FC6691 /* Sources */,
 				236A220527E2654500FC6691 /* Frameworks */,
 				236A220627E2654500FC6691 /* Resources */,
+				3BA973479D356666B49A5A5D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +179,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				236A221827E2654700FC6691 /* LaunchScreen.storyboard in Resources */,
+				236A222027E2657900FC6691 /* GoogleService-Info.plist in Resources */,
 				236A221527E2654700FC6691 /* Assets.xcassets in Resources */,
 				236A221327E2654500FC6691 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BA973479D356666B49A5A5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyKo/Pods-MyKo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyKo/Pods-MyKo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyKo/Pods-MyKo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		506F984362903560F63DBA76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyKo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		236A220427E2654500FC6691 /* Sources */ = {
@@ -282,6 +378,7 @@
 		};
 		236A221D27E2654700FC6691 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 923770F43672678EA2977746 /* Pods-MyKo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +392,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,12 +402,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		236A221E27E2654700FC6691 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47737EDEDA0A5A92CA5D3347 /* Pods-MyKo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +422,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +432,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
