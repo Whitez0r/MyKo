@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		236A220C27E2654500FC6691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236A220B27E2654500FC6691 /* AppDelegate.swift */; };
 		236A220E27E2654500FC6691 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236A220D27E2654500FC6691 /* SceneDelegate.swift */; };
-		236A221027E2654500FC6691 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236A220F27E2654500FC6691 /* ViewController.swift */; };
 		236A221327E2654500FC6691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236A221127E2654500FC6691 /* Main.storyboard */; };
 		236A221527E2654700FC6691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236A221427E2654700FC6691 /* Assets.xcassets */; };
 		236A221827E2654700FC6691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236A221627E2654700FC6691 /* LaunchScreen.storyboard */; };
 		236A222027E2657900FC6691 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 236A221F27E2657900FC6691 /* GoogleService-Info.plist */; };
+		238ECF6527E4C560009E0DB4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238ECF6427E4C560009E0DB4 /* LoginViewController.swift */; };
+		238ECF6927E4CBAF009E0DB4 /* SlideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238ECF6727E4CBAF009E0DB4 /* SlideCollectionViewCell.swift */; };
+		238ECF6A27E4CBAF009E0DB4 /* SlideCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 238ECF6827E4CBAF009E0DB4 /* SlideCollectionViewCell.xib */; };
+		238ECF6C27E4DE46009E0DB4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238ECF6B27E4DE46009E0DB4 /* Model.swift */; };
+		238ECF6E27E4E724009E0DB4 /* SliderSlides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238ECF6D27E4E724009E0DB4 /* SliderSlides.swift */; };
 		C22D31706A3CF8BDF353FEE9 /* Pods_MyKo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1351FBC5E065A0C87F6C8F5A /* Pods_MyKo.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,12 +26,16 @@
 		236A220827E2654500FC6691 /* MyKo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyKo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		236A220B27E2654500FC6691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		236A220D27E2654500FC6691 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		236A220F27E2654500FC6691 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		236A221227E2654500FC6691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		236A221427E2654700FC6691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		236A221727E2654700FC6691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		236A221927E2654700FC6691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		236A221F27E2657900FC6691 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		238ECF6427E4C560009E0DB4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		238ECF6727E4CBAF009E0DB4 /* SlideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideCollectionViewCell.swift; sourceTree = "<group>"; };
+		238ECF6827E4CBAF009E0DB4 /* SlideCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideCollectionViewCell.xib; sourceTree = "<group>"; };
+		238ECF6B27E4DE46009E0DB4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		238ECF6D27E4E724009E0DB4 /* SliderSlides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSlides.swift; sourceTree = "<group>"; };
 		47737EDEDA0A5A92CA5D3347 /* Pods-MyKo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyKo.release.xcconfig"; path = "Target Support Files/Pods-MyKo/Pods-MyKo.release.xcconfig"; sourceTree = "<group>"; };
 		923770F43672678EA2977746 /* Pods-MyKo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyKo.debug.xcconfig"; path = "Target Support Files/Pods-MyKo/Pods-MyKo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,7 +78,6 @@
 				23ED11AE27E268F800D1481E /* Model */,
 				236A220B27E2654500FC6691 /* AppDelegate.swift */,
 				236A220D27E2654500FC6691 /* SceneDelegate.swift */,
-				236A220F27E2654500FC6691 /* ViewController.swift */,
 				236A221127E2654500FC6691 /* Main.storyboard */,
 				236A221427E2654700FC6691 /* Assets.xcassets */,
 				236A221627E2654700FC6691 /* LaunchScreen.storyboard */,
@@ -80,9 +87,35 @@
 			path = MyKo;
 			sourceTree = "<group>";
 		};
+		238ECF6227E4C539009E0DB4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				238ECF6427E4C560009E0DB4 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		238ECF6327E4C53F009E0DB4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		238ECF6627E4CB64009E0DB4 /* Slide */ = {
+			isa = PBXGroup;
+			children = (
+				238ECF6727E4CBAF009E0DB4 /* SlideCollectionViewCell.swift */,
+				238ECF6827E4CBAF009E0DB4 /* SlideCollectionViewCell.xib */,
+			);
+			path = Slide;
+			sourceTree = "<group>";
+		};
 		23ED11AE27E268F800D1481E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				238ECF6B27E4DE46009E0DB4 /* Model.swift */,
+				238ECF6D27E4E724009E0DB4 /* SliderSlides.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,6 +123,7 @@
 		23ED11AF27E2690700D1481E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				238ECF6627E4CB64009E0DB4 /* Slide */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,6 +131,8 @@
 		23ED11B027E2691500D1481E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				238ECF6327E4C53F009E0DB4 /* App */,
+				238ECF6227E4C539009E0DB4 /* Login */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -179,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				236A221827E2654700FC6691 /* LaunchScreen.storyboard in Resources */,
+				238ECF6A27E4CBAF009E0DB4 /* SlideCollectionViewCell.xib in Resources */,
 				236A222027E2657900FC6691 /* GoogleService-Info.plist in Resources */,
 				236A221527E2654700FC6691 /* Assets.xcassets in Resources */,
 				236A221327E2654500FC6691 /* Main.storyboard in Resources */,
@@ -234,7 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				236A221027E2654500FC6691 /* ViewController.swift in Sources */,
+				238ECF6C27E4DE46009E0DB4 /* Model.swift in Sources */,
+				238ECF6927E4CBAF009E0DB4 /* SlideCollectionViewCell.swift in Sources */,
+				238ECF6E27E4E724009E0DB4 /* SliderSlides.swift in Sources */,
+				238ECF6527E4C560009E0DB4 /* LoginViewController.swift in Sources */,
 				236A220C27E2654500FC6691 /* AppDelegate.swift in Sources */,
 				236A220E27E2654500FC6691 /* SceneDelegate.swift in Sources */,
 			);
