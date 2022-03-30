@@ -14,6 +14,7 @@ class SlideCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var regBtn: UIButton!
     @IBOutlet weak var authBtn: UIButton!
     @IBOutlet weak var descriptionText: UILabel!
+    var delegate: LoginViewControllerDelegate!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,11 +30,11 @@ class SlideCollectionViewCell: UICollectionViewCell {
     }
     
     @IBAction func regBtnClick(_ sender: Any) {
-        
+        delegate.openRegVC()
     }
     
     @IBAction func authBtnClick(_ sender: Any) {
-        
+        delegate.openAuthVC()
     }
     
 }

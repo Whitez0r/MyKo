@@ -7,11 +7,20 @@
 
 import UIKit
 
+
+protocol LoginViewControllerDelegate{
+    func openRegVC()
+    func openAuthVC()
+    func closeVC()
+}
+
 class LoginViewController: UIViewController {
 
     var collectionView: UICollectionView!
     var slides: [Slides] = []
     let slidesSlider = SliderSlides()
+    var authVC: AuthViewController!
+    var regVC: RegViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +56,7 @@ extension LoginViewController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SlideCollectionViewCell.reuceId, for: indexPath) as!
             SlideCollectionViewCell
-        
+        cell.delegate = self
         let slide = slides[indexPath.row]
         cell.configure(slide: slide)
         return cell
@@ -59,4 +68,33 @@ extension LoginViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
 }
 
+extension LoginViewController: LoginViewControllerDelegate{
 
+    func openAuthVC() {
+        if authVC == nil {
+            authVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AuthViewController") as! AuthViewController?
+        }
+        authVC.delegate = self
+        self.view.insertSubview(authVC.view, at: 1)
+    }
+    
+    func openRegVC() {
+        if regVC == nil {
+            regVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RegViewController") as! RegViewController?
+        }
+        regVC.delegate = self
+        self.view.insertSubview(regVC.view, at: 1)
+    }
+    
+    func closeVC() {
+        if authVC != nil {
+            authVC.view.removeFromSuperview()
+            authVC = nil
+        }
+        if regVC != nil {
+            regVC.view.removeFromSuperview()
+            regVC = nil
+        }
+
+    }
+}
