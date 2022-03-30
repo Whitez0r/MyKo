@@ -11,3 +11,12 @@ struct Slides {
     var id: Int
     var text: String
 }
+
+struct LoginField {
+    var email: String
+    var password: String
+}
+
+struct ResponceCode {
+    var code: Int
+}

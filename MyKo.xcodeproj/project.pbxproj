@@ -21,6 +21,8 @@
 		238ECF7027E4E9E1009E0DB4 /* RegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238ECF6F27E4E9E1009E0DB4 /* RegViewController.swift */; };
 		238ECF7227E4E9EE009E0DB4 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238ECF7127E4E9EE009E0DB4 /* AuthViewController.swift */; };
 		238ECF7427E4EAE9009E0DB4 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238ECF7327E4EAE9009E0DB4 /* AppViewController.swift */; };
+		23A28B8A27F48A88004E387C /* CheckField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A28B8927F48A88004E387C /* CheckField.swift */; };
+		23A28B8C27F48F36004E387C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A28B8B27F48F36004E387C /* Service.swift */; };
 		C22D31706A3CF8BDF353FEE9 /* Pods_MyKo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1351FBC5E065A0C87F6C8F5A /* Pods_MyKo.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		238ECF6F27E4E9E1009E0DB4 /* RegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegViewController.swift; sourceTree = "<group>"; };
 		238ECF7127E4E9EE009E0DB4 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		238ECF7327E4EAE9009E0DB4 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		23A28B8927F48A88004E387C /* CheckField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckField.swift; sourceTree = "<group>"; };
+		23A28B8B27F48F36004E387C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		47737EDEDA0A5A92CA5D3347 /* Pods-MyKo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyKo.release.xcconfig"; path = "Target Support Files/Pods-MyKo/Pods-MyKo.release.xcconfig"; sourceTree = "<group>"; };
 		923770F43672678EA2977746 /* Pods-MyKo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyKo.debug.xcconfig"; path = "Target Support Files/Pods-MyKo/Pods-MyKo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +129,8 @@
 			children = (
 				238ECF6B27E4DE46009E0DB4 /* Model.swift */,
 				238ECF6D27E4E724009E0DB4 /* SliderSlides.swift */,
+				23A28B8927F48A88004E387C /* CheckField.swift */,
+				23A28B8B27F48F36004E387C /* Service.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,10 +289,12 @@
 				238ECF6C27E4DE46009E0DB4 /* Model.swift in Sources */,
 				238ECF6927E4CBAF009E0DB4 /* SlideCollectionViewCell.swift in Sources */,
 				238ECF6E27E4E724009E0DB4 /* SliderSlides.swift in Sources */,
+				23A28B8A27F48A88004E387C /* CheckField.swift in Sources */,
 				238ECF6527E4C560009E0DB4 /* LoginViewController.swift in Sources */,
 				238ECF7227E4E9EE009E0DB4 /* AuthViewController.swift in Sources */,
 				236A220C27E2654500FC6691 /* AppDelegate.swift in Sources */,
 				238ECF7427E4EAE9009E0DB4 /* AppViewController.swift in Sources */,
+				23A28B8C27F48F36004E387C /* Service.swift in Sources */,
 				236A220E27E2654500FC6691 /* SceneDelegate.swift in Sources */,
 				238ECF7027E4E9E1009E0DB4 /* RegViewController.swift in Sources */,
 			);
