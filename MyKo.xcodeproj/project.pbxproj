@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2340BC7A282FB97200D1183A /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2340BC79282FB97200D1183A /* MessageListViewController.swift */; };
+		2340BC7C282FBE3D00D1183A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2340BC7B282FBE3D00D1183A /* ChatViewController.swift */; };
 		236A220C27E2654500FC6691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236A220B27E2654500FC6691 /* AppDelegate.swift */; };
 		236A220E27E2654500FC6691 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236A220D27E2654500FC6691 /* SceneDelegate.swift */; };
 		236A221327E2654500FC6691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236A221127E2654500FC6691 /* Main.storyboard */; };
@@ -23,11 +25,16 @@
 		238ECF7427E4EAE9009E0DB4 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238ECF7327E4EAE9009E0DB4 /* AppViewController.swift */; };
 		23A28B8A27F48A88004E387C /* CheckField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A28B8927F48A88004E387C /* CheckField.swift */; };
 		23A28B8C27F48F36004E387C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A28B8B27F48F36004E387C /* Service.swift */; };
+		23D2F842282F985B000A6936 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D2F841282F985B000A6936 /* UsersViewController.swift */; };
+		23D2F846282F98D3000A6936 /* UserCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D2F844282F98D3000A6936 /* UserCellTableViewCell.swift */; };
+		23D2F847282F98D3000A6936 /* UserCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D2F845282F98D3000A6936 /* UserCellTableViewCell.xib */; };
 		C22D31706A3CF8BDF353FEE9 /* Pods_MyKo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1351FBC5E065A0C87F6C8F5A /* Pods_MyKo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1351FBC5E065A0C87F6C8F5A /* Pods_MyKo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyKo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2340BC79282FB97200D1183A /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
+		2340BC7B282FBE3D00D1183A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		236A220827E2654500FC6691 /* MyKo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyKo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		236A220B27E2654500FC6691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		236A220D27E2654500FC6691 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +53,9 @@
 		238ECF7327E4EAE9009E0DB4 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		23A28B8927F48A88004E387C /* CheckField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckField.swift; sourceTree = "<group>"; };
 		23A28B8B27F48F36004E387C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		23D2F841282F985B000A6936 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		23D2F844282F98D3000A6936 /* UserCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellTableViewCell.swift; sourceTree = "<group>"; };
+		23D2F845282F98D3000A6936 /* UserCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCellTableViewCell.xib; sourceTree = "<group>"; };
 		47737EDEDA0A5A92CA5D3347 /* Pods-MyKo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyKo.release.xcconfig"; path = "Target Support Files/Pods-MyKo/Pods-MyKo.release.xcconfig"; sourceTree = "<group>"; };
 		923770F43672678EA2977746 /* Pods-MyKo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyKo.debug.xcconfig"; path = "Target Support Files/Pods-MyKo/Pods-MyKo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2340BC78282FB78000D1183A /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				2340BC79282FB97200D1183A /* MessageListViewController.swift */,
+				2340BC7B282FBE3D00D1183A /* ChatViewController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		236A21FF27E2654500FC6691 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +129,8 @@
 		238ECF6327E4C53F009E0DB4 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				23D2F840282F97E6000A6936 /* Messenger */,
+				23D2F83F282F97B9000A6936 /* Users */,
 				238ECF7327E4EAE9009E0DB4 /* AppViewController.swift */,
 			);
 			path = App;
@@ -122,6 +143,30 @@
 				238ECF6827E4CBAF009E0DB4 /* SlideCollectionViewCell.xib */,
 			);
 			path = Slide;
+			sourceTree = "<group>";
+		};
+		23D2F83F282F97B9000A6936 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				23D2F841282F985B000A6936 /* UsersViewController.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		23D2F840282F97E6000A6936 /* Messenger */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Messenger;
+			sourceTree = "<group>";
+		};
+		23D2F843282F98A9000A6936 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				23D2F844282F98D3000A6936 /* UserCellTableViewCell.swift */,
+				23D2F845282F98D3000A6936 /* UserCellTableViewCell.xib */,
+			);
+			path = Users;
 			sourceTree = "<group>";
 		};
 		23ED11AE27E268F800D1481E /* Model */ = {
@@ -138,6 +183,8 @@
 		23ED11AF27E2690700D1481E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2340BC78282FB78000D1183A /* Chat */,
+				23D2F843282F98A9000A6936 /* Users */,
 				238ECF6627E4CB64009E0DB4 /* Slide */,
 			);
 			path = View;
@@ -229,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23D2F847282F98D3000A6936 /* UserCellTableViewCell.xib in Resources */,
 				236A221827E2654700FC6691 /* LaunchScreen.storyboard in Resources */,
 				238ECF6A27E4CBAF009E0DB4 /* SlideCollectionViewCell.xib in Resources */,
 				236A222027E2657900FC6691 /* GoogleService-Info.plist in Resources */,
@@ -286,7 +334,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2340BC7A282FB97200D1183A /* MessageListViewController.swift in Sources */,
 				238ECF6C27E4DE46009E0DB4 /* Model.swift in Sources */,
+				23D2F842282F985B000A6936 /* UsersViewController.swift in Sources */,
 				238ECF6927E4CBAF009E0DB4 /* SlideCollectionViewCell.swift in Sources */,
 				238ECF6E27E4E724009E0DB4 /* SliderSlides.swift in Sources */,
 				23A28B8A27F48A88004E387C /* CheckField.swift in Sources */,
@@ -297,6 +347,8 @@
 				23A28B8C27F48F36004E387C /* Service.swift in Sources */,
 				236A220E27E2654500FC6691 /* SceneDelegate.swift in Sources */,
 				238ECF7027E4E9E1009E0DB4 /* RegViewController.swift in Sources */,
+				2340BC7C282FBE3D00D1183A /* ChatViewController.swift in Sources */,
+				23D2F846282F98D3000A6936 /* UserCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

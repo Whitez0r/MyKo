@@ -6,6 +6,8 @@ target 'MyKo' do
   use_frameworks!
 
 pod 'Firebase/Auth'
+pod 'Firebase/Firestore'
+pod 'MessageKit'
 
   # Pods for MyKo
 

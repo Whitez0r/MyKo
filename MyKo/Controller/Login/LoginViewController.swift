@@ -12,6 +12,7 @@ protocol LoginViewControllerDelegate{
     func openRegVC()
     func openAuthVC()
     func closeVC()
+    func startApp()
 }
 
 class LoginViewController: UIViewController {
@@ -96,5 +97,10 @@ extension LoginViewController: LoginViewControllerDelegate{
             regVC = nil
         }
 
+    }
+    
+    func startApp() {
+        let startViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AppViewController")
+        self.view.insertSubview(startViewController.view, at: 2)
     }
 }
